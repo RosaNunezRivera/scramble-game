@@ -111,6 +111,7 @@ function playSoundWin() {
 3. A scramble word is displayed and a hint about this word
 
 ![Alt text](./assets/img/image-2.png)
+
 3.Introduce the word in the input and press the enter key
 
 ![Alt text](./assets/img/image-3.png)
