@@ -109,11 +109,16 @@ function playSoundWin() {
 1. Open any browser
 2. Do click in Demo link
 3. A scramble word is displayed and a hint about this word
+
 ![Alt text](./assets/img/image-2.png)
 3.Introduce the word in the input and press the enter key
+
 ![Alt text](./assets/img/image-3.png)
+
 4.The game brings a feedback message with a sound about the result of the word typed
+
 ![Alt text](./assets/img/image-4.png)
+
 5.Click in the button Next word to try with other word
 
 ## Demo
