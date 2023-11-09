@@ -8,7 +8,7 @@ Java Script is so powerful and useful to create cool applications. This is an ex
 In the HTLM file there are the following elements:
 
 * ```<button class="button-play">``` to get more word to plat.
-* ```<h2><span>``` and  ```<h3><span>``` element to show the scramble word and hint to bring help to the user to guess the word
+* ```<h2><span>``` and  ```<h3><span>``` elements to show the scramble word and hint to bring help to the user to guess the word
 * ```<input type="text">``` to get the word enter by the user
 * ```<h4 id="feed-back">``` to show the message to bring feedback to the user
 * ```<audio>``` to include sound to create better experience to the user
@@ -40,7 +40,7 @@ In the HTLM file there are the following elements:
         </div>
 ```
 
-In JavaScript File contain an array with the  ***property word*** and ***hint*** hint wich contains all the words and description to use in the game.  
+JavaScript file contain an array with the  ***property word*** and ***hint*** hint which contains all the words and description to use in the game.  
 
 ```JavaScript
 const words = [
@@ -62,7 +62,7 @@ onEvent('click', buttonNextWords, function () {
 });
 ```
 
-2.```init() function``` to intialize all the variables and chose the word to play
+2.```init() function``` to initialize all the variables and chose the word to play
 
 ```JacaScript
 function init() {
@@ -79,7 +79,7 @@ function init() {
 }
 ```
 
-3.```addEventListener function``` to after that user prest enter key validate the word typed and ```checkWord() function``` function to check if the user\'s word is correct
+3.```addEventListener function``` to after that user press enter key validate the word typed and ```checkWord() function``` function to check if the user\'s word is correct
 
 ```JavaScript
 wordInput.addEventListener("keydown", function (event) {
@@ -96,13 +96,25 @@ wordInput.addEventListener("keydown", function (event) {
 });
 ```
 
-Finally, the function ```addEventListener``` includes ```audioWin.play();``` to play a sound when the user type the correct word in order to create a better expererience
+Finally, the function ```addEventListener``` includes ```audioWin.play();``` to play a sound when the user type the correct word in order to create a better experience
 
 ```JAVASCRIPT
 function playSoundWin() {
     audioWin.play();
 }
 ```
+
+## Steps to execute the project
+
+1. Open any browser
+2. Do click in Demo link
+3. A scramble word is displayed and a hint about this word
+![Alt text](./assets/img/image-2.png)
+3.Introduce the word in the input and press the enter key
+![Alt text](./assets/img/image-3.png)
+4.The game brings a feedback message with a sound about the result of the word typed
+![Alt text](./assets/img/image-4.png)
+5.Click in the button Next word to try with other word
 
 ## Demo
 

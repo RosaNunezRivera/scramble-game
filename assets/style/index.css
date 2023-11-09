@@ -149,7 +149,7 @@ input[type="text"]:hover {
 .button-play {
     position: absolute;
     top: 25px;
-    left: 1150px;
+    left: 1300px;
     font-size: 18px;
     font-weight: 600;
     color: var(--app-pink-bg);
