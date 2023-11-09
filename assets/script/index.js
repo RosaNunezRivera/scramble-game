@@ -26,11 +26,10 @@ function print(...args) {
     console.log(args.join(', '));
 }
 
-
 //Global variables
 let msg = '';
 let correctWord = '';
-let words = [
+const words = [
     {
         word: "addition",
         hint: "The process of adding numbers"
@@ -58,7 +57,7 @@ let scrambleWord = selectById("scramble-word");
 let hintText = selectById("hint");
 let wordInput = selectById("word");
 
-let buttonPlay = select(".button-play");
+let buttonNextWords = select(".button-play");
 let buttonRestart = select(".button-restart");
 
 
@@ -74,7 +73,7 @@ let message = selectById('feed-back');
 /*--------------------------------------------------------------------------------*/
 /* Function: Star Play Button                                                      */
 /*--------------------------------------------------------------------------------*/
-onEvent('click', buttonPlay, function () {
+onEvent('click', buttonNextWords, function () {
     init();
     showMessage('Enter a Valid word');
 });
@@ -99,7 +98,7 @@ function init() {
 /*--------------------------------------------------------------------------------*/
 /* Function: Playing, validating if the word is equeal to the correct word        */
 /*--------------------------------------------------------------------------------*/
-function play() {
+function checkWord() {
     let wrd = wordInput.value.toLowerCase();
     if (wrd === correctWord) {
         audioWin.play();
@@ -120,7 +119,7 @@ wordInput.addEventListener("keydown", function (event) {
         let isValid = validate();
 
         if (isValid) {
-            msg = play();
+            msg = checkWord();
             showMessage(msg);
         }
     }
